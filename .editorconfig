@@ -1,0 +1,43 @@
+
+root = true
+
+[*]
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 80
+indent_size = 4
+
+[*.{c,h,cpp,hpp,cc,cxx,sh,bash}]
+end_of_line = lf
+indent_style = space
+
+[{Makefile,makefile}]
+end_of_line = lf
+indent_style = tab
+
+[*.{md,mkd,markdown}]
+end_of_line = crlf
+trim_trailing_whitespace = false
+indent_style = space
+
+[*.{txt}]
+end_of_line = crlf
+indent_style = space
+
+[{README,readme}]
+end_of_line = crlf
+indent_style = space
+
+[*.{js,htm,html,json,css}]
+end_of_line = lf
+indent_style = space
+indent_size = 2
+
+[*.{go}]
+end_of_line = lf
+indent_style = tab
+
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
