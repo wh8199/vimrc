@@ -1,15 +1,15 @@
 set nu!       "show linenums
 
-filetype on   "open filetype 
+filetype on   "open filetype
 
 syntax on     "highlight
 
 set tabstop=4    " table 4
-set softtabstop=4  
+set softtabstop=4
 set sw=4
 set smarttab
-set expandtab     " tab is space 
-set autoindent   
+set expandtab     " tab is space
+set autoindent
 
 "when create *.c *.cpp *.sh,SetTile() function will be called autumaticly.
 autocmd BufNewFile *.c,*.sh,*.cpp exec ":call SetTitle()"
@@ -64,6 +64,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'fatih/vim-go'
 call vundle#end()            " required
 "filetype plugin indent on    " required
 
@@ -100,7 +101,7 @@ function AddTitle2()
         call append(line(".") + 11,"* RETURN:")
         call append(line(".") + 12,"*      0 - OK")
         call append(line(".") + 13,"*      Others - Error")
-        call append(line(".") + 14,"*******************************************************************************/") 
+        call append(line(".") + 14,"*******************************************************************************/")
     elseif &filetype == 'cpp'
         call append(line("."),"//------------------------------------------------------------------------------")
         call append(line(".") + 1,"// NAME:")
@@ -117,5 +118,5 @@ function AddTitle2()
         call append(line(".") + 12,"//      0 - OK")
         call append(line(".") + 13,"//      Others - Error")
         call append(line(".") + 14,"//------------------------------------------------------------------------------")
-    endif    
+    endif
 endfunction
