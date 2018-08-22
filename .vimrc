@@ -4,6 +4,7 @@ filetype on   "open filetype
 
 syntax on     "highlight
 
+set backspace=2
 set tabstop=4    " table 4
 set softtabstop=4
 set sw=4
@@ -64,7 +65,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 call vundle#end()            " required
 "filetype plugin indent on    " required
 
