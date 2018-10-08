@@ -65,7 +65,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
-"Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 call vundle#end()            " required
 "filetype plugin indent on    " required
 
