@@ -12,6 +12,8 @@ set smarttab
 set expandtab     " tab is space
 set autoindent
 
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
 "when create *.c *.cpp *.sh,SetTile() function will be called autumaticly.
 autocmd BufNewFile *.c,*.sh,*.cpp exec ":call SetTitle()"
 
