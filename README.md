@@ -12,3 +12,6 @@ clang configuration file
 ## .editorconfig 
 editorconfig configuration file
 
+## alacritty.yaml
+alacritty configuration file
+
